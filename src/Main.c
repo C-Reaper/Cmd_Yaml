@@ -11,7 +11,7 @@
 #endif
 
 int main(){
-    Yaml yl = Yaml_New("./code/Main.yaml");
+    Yaml yl = Yaml_Make("./code/Main.yaml");
     
     CStr value0 = Yaml_GetCStr(&yl,"monitoring/uptime/history/1/details/issue");
     printf("Value found: '%s'\n",value0);
