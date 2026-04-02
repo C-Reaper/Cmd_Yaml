@@ -1,0 +1,14 @@
+schule:
+  schueler:
+    nick:
+      age: 19
+      height: 180
+      iq: 140
+    alex:
+      age: 19
+      height: 179
+      iq: 69
+    yanis:
+      age: 19
+      height: 189
+      iq: 96
