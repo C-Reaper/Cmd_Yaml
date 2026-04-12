@@ -11,7 +11,7 @@
 #endif
 
 int main(){
-    
+    /*
     Yaml yl = Yaml_Make("./code/Main.yaml");
     
     CStr value0 = Yaml_GetCStr(&yl,"monitoring/uptime/history/1/details/issue");
@@ -25,13 +25,14 @@ int main(){
 
     Yaml_Set(&yl,"users/accounts/active/0/role","imposter");
     Yaml_Print(&yl);
-    Yaml_Save(&yl,"./code/Save.yaml");
-    Yaml_Free(&yl);
-    
-    /*
-    Yaml yl = Yaml_Make("./code/Test.yaml");
-    Yaml_Print(&yl);
+    Yaml_Save(&yl,"./code/Main_Save.yaml");
     Yaml_Free(&yl);
     */
+    
+    Yaml yl = Yaml_Make("./code/Test.yaml");
+    Yaml_Print(&yl);
+    Yaml_Save(&yl,"./code/Test_Save.yaml");
+    Yaml_Free(&yl);
+    
     return 0;
 }
