@@ -1,4 +1,7 @@
 schule:
+  computer:
+    - IP: "192.168.2.1"
+      Info: "In Use!\nTry later"
   schueler:
     nick:
       age: 19

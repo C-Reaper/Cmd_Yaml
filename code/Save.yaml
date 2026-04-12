@@ -1,6 +1,6 @@
 system: 
-  name: "MegaApp"
-  version: "4.2.1"
+  name: MegaApp
+  version: 4.2.1
   environment: production
   features: 
     authentication: true
@@ -58,14 +58,14 @@ users:
         - content:read
   accounts: 
     active: 
-      - username: "alice"
+      - username: alice
         role: imposter
         settings: 
           theme: dark
           notifications: 
             email: true
             sms: false
-      - username: "bob"
+      - username: bob
         role: editor
         settings: 
           theme: light
@@ -73,12 +73,12 @@ users:
             email: true
             sms: true
     inactive: 
-      - username: "carla"
+      - username: carla
         role: viewer
-        reason: "left_company"
-      - username: "dennis"
+        reason: left_company
+      - username: dennis
         role: editor
-        reason: "security_hold"
+        reason: security_hold
 logging: 
   levels: 
     default: INFO
@@ -98,13 +98,13 @@ events:
     user: alice
     timestamp: 2025-05-12T14:33:11Z
     metadata: 
-      ip: "192.168.1.12"
+      ip: 192.168.1.12
       method: web
   - type: file_upload
     user: bob
     timestamp: 2025-05-12T14:45:00Z
     file: 
-      name: "report.pdf"
+      name: report.pdf
       size_kb: 488
       tags: 
         - finance
